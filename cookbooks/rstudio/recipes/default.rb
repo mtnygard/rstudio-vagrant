@@ -28,6 +28,14 @@ user "rstudio" do
   uid 2000
   gid "users"
   shell "/bin/false"
+  home "/home/rstudio"
+end
+
+directory "/home/rstudio" do
+  owner "rstudio"
+  group "users"
+  mode 0755
+  action :create
 end
 
 remote_file "/tmp/rstudio-server-#{node[:rstudio][:version]}-amd64.deb" do

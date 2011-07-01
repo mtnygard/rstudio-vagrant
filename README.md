@@ -8,10 +8,16 @@ Prerequisites
 You will need to be running RVM in order to use this.
 
 1. bundle install
+1. vagrant box add lucid64 http://files.vagrantup.com/lucid64.box
 1. vagrant up
 1. vagrant ssh 
 1. sudo passwd rstudio
 (set whatever password you like)
+
+I've seen some issues if you have vagrant installed under multiple RVM
+rubies or gemsets. If you get an error in rubygems.rb like 'Could not
+find RubyGem vagrant', then use 'bundle exec vagrant up' and 'bundle
+exec vagrant ssh' instead.
 
 Use
 ----------
