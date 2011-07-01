@@ -1,0 +1,12 @@
+= DESCRIPTION:
+
+Install R Studio.
+
+= REQUIREMENTS:
+
+Only supports Ubuntu or Debian.
+
+= ATTRIBUTES:
+
+= USAGE:
+
